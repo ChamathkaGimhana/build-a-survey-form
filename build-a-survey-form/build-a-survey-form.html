@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Registation Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+
+
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name">Name <input id="name"  type="text" placeholder="Enter your name" required></label>
+
+      <label id="email-label" for="email">Email <input id="email"  type="email" placeholder="Enter your Email" required></label>
+
+      <label id="number-label" for="number">Age <input id="number"  type="number" min="13" max="120" placeholder="age"></label>
+      </fieldset>
+
+<fieldset>
+    <label>How did you hear about us?
+      <select id="dropdown">
+        <option>(Select one)</option>
+        <option>News</option>
+        <option>Youtube</option>
+        <option>Forms</option>
+        <option>Other</option>
+      </select>
+    </label>
+  </fieldset>
+
+
+<fieldset>
+     <legend>Account type (required)</legend> 
+
+      <label for="business"><input class="inline" id="business"  type="radio" name="account-type" value="1" > Business</label>
+
+      <label for="personal"><input class="inline" id="personal"  type="radio" name="account-type" value="2" checked> Personal</label>  
+</fieldset>
+
+
+<fieldset>
+  <legend>Check Box</legend> 
+   <label for="checkbox1">
+        <input id="checkbox1" class="inline" type="checkbox" value="3"/> Check Box 1
+   </label> 
+   <label for="checkbox2">
+        <input id="checkbox2" class="inline" type="checkbox" value="4"/> Check Box 2
+   </label> 
+   <label for="checkbox3">
+        <input id="checkbox3" class="inline" type="checkbox" value="5"/> Check Box 3
+   </label>  
+</fieldset>
+
+<label>If you have any Problem Comment Here: <textarea placeholder="Enter your comment here..." rows="3" cols="30"></textarea><label>
+
+
+  <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
+
+
